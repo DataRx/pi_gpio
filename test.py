@@ -85,3 +85,40 @@ for _ in range(50):
         print "LED 27 on"
         GPIO.output(27,GPIO.HIGH)
     time.sleep(s)
+
+s = 0.025
+print 'faster 0.025'
+for _ in range(50):
+    if ff == 0:
+        ff = 1
+        print "LED 17 on"
+        GPIO.output(17,GPIO.HIGH)
+        print "LED 27 off"
+        GPIO.output(27,GPIO.LOW)
+    else:
+        ff = 0
+        print "LED 17 off"
+        GPIO.output(17,GPIO.LOW)
+        print "LED 27 on"
+        GPIO.output(27,GPIO.HIGH)
+    print '0.025'
+    time.sleep(s)
+
+
+s = 0.015
+print 'faster 0.015'
+for _ in range(50):
+    if ff == 0:
+        ff = 1
+        print "LED 17 on"
+        GPIO.output(17,GPIO.HIGH)
+        print "LED 27 off"
+        GPIO.output(27,GPIO.LOW)
+    else:
+        ff = 0
+        print "LED 17 off"
+        GPIO.output(17,GPIO.LOW)
+        print "LED 27 on"
+        GPIO.output(27,GPIO.HIGH)
+    print '0.015'
+    time.sleep(s)
