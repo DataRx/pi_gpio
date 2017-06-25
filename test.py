@@ -122,3 +122,8 @@ for _ in range(50):
         GPIO.output(27,GPIO.HIGH)
     print '0.015'
     time.sleep(s)
+
+print "LED 17 off"
+GPIO.output(17, GPIO.LOW)
+print "LED 27 off"
+GPIO.output(27, GPIO.LOW)
